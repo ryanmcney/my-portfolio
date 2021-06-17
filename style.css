@@ -10,13 +10,44 @@ body {
 }
 
 h1 {
-  color: #000000;
-  font-family: 'Roboto';
-  font-size: 2em;
-  padding-top: 100px;
+  color: #323132;
+  font-family: 'Sans- Serif';
+  font-size: 50px;
+  text-align: center;
+  padding: 35px;
   width: 100%;
+  border: 3px solid #00A4BD;
 }
 
+/* Navigation menu */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #999999;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ffffff;
+  color: 000000;
+  font-weight: bold;
+}
 
 /* Font Awesome icons */
 .fa {
