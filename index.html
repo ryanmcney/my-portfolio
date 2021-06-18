@@ -10,6 +10,7 @@
 
       <link rel="stylesheet" href="style.css">
       <link rel="shortcut icon" type="image/x-icon" href="">
+      <style> .visuallyhidden{display: none;}</style>
       <title>Ryan McNey | Product Manager Portfolio</title>
    </head>
 
@@ -17,41 +18,80 @@
    <body>
 
 <!-- NAV : defines a set of navigation links -->
-  <nav class="topnav">
-    <a href="#work">Select Work</a>
-    <a href="#resume">Resume</a>
-    <a href="#about">About + Connect</a>
-  </nav>
+    <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a href="#" class="navebar-brand">
+        <img src="https://images.squarespace-cdn.com/content/v1/5b608829a9e028c65a3c891a/1533248235289-XBI4NG1AV7VM3MFMQC7T/ke17ZwdGBToddI8pDm48kGDpvalPb1SqHoCn1hwN0Y57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmx-YtV7KdJhhcFMxgH7DNwVWsr4BytTuzU0mdZNjZkC7ehjA8nxqmKGxR1QtMJl5J/ellie-bolt-icon.png?format=500w"
+        alt="Ryan McNey logo" width="30" height="24" class="d-inline-block align-top"/>
+        <span class="visuallyhidden">Ryan McNey</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#toggleMobileMenu"
+        aria-controls="#toggleMobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav ms-auto text-center">
+          <li>
+            <a class="nav-link" href="#">Select Work</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">About + Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
 
 <!-- MAIN : the main content of the individual webpage -->
-    <main class="container">
-      <section id="work">
-        <article>
-          <h1>
-            — Ryan is a Product Manager, Tinkerer, and Crypto Enthusiast in Fairfax, VA
-          </h1>
-        </article>
-      </section>
-      <figure>
-        <embed src="https://cdn.dribbble.com/users/2367833/screenshots/9243001/media/ecd8969c209d4d35aa59800bd065159e.gif">
-      </figure>
-      <aside>
-        <p>
-          “Even with an extensive amount of responsibility, Ryan is someone I can always rely on. He has a vast array of knowledge, especially pertaining to technology; he’s able to synthesize the most complex concepts into plain English. He’s an incredibly thorough manager while also being a delightful person to work with. One of my favorite attributes about Ryan is his ability to challenge an idea or concept in a way that makes everyone think about it from a different perspective, and ultimately, create a better version.”
-        </p>
-        <br>
-        <p>
-          — Erica Hanner [Business Owner & Co-Founder]
-        </p>
-      </aside>
-    </main>
+    <div class="container">
+      <h1 style="padd">— Ryan is a Product Manager, Tinkerer, and Crypto Enthusiast in Fairfax, VA</h1>
+      <div class="row">
+        <div class="col">
+          <img src="https://lh3.googleusercontent.com/tNejkMJMN_etptFS3w2mUUiZWjz5oNvcMa2FCdfrnw3xiYa43tw9oep6aRT1L6XeeVGqYIM8h2t_Fbe7H1rnuvapPQ=w640-h400-e365-rj-sc0x00ffffff" alt="Dribble logo" style="width:600px;height:400px;">
+          <img src="https://media.rooam.co/social/rooam-twitter.png" alt="Rooam logo" style="width:600px;height:400px;">
+        </div>
+        <div class="col">
+          <img src="https://www.baseballfactory.com/wp/wp-content/uploads/2014/10/shopping-header.jpg" alt="Baseball Factory logo" style="width:600px;height:400px;">
+          <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/b9/a3/b5/b9a3b5e1-122c-0e3f-ecf5-fb0fefa7a239/source/512x512bb.jpg" alt="Pulse logo" style="width:600px;height:400px;">
+        </div>
+    </div>
+      <h2>
+        “Even with an extensive amount of responsibility, Ryan is someone I can always rely on. He has a vast array of knowledge, especially pertaining to technology; he’s able to synthesize the most complex concepts into plain English. He’s an incredibly thorough manager while also being a delightful person to work with. One of my favorite attributes about Ryan is his ability to challenge an idea or concept in a way that makes everyone think about it from a different perspective, and ultimately, create a better version.”
+      </h2>
+      <h3>
+        — Erica Hanner [Business Owner & Co-Founder]
+      </h3>
+    </div>
+
+<!-- About + Connect button -->
+    <div class="container" style="padding-top:150px;padding-bottom:150px">
+      <div class="row">
+        <div class="col text-center">
+          <button type="button" class="btn btn-outline-dark">About + Connect</button>
+        </div>
+      </div>
+    </div>
 
 <!-- FOOTER : defines a footer including contact info, sitemap, back to top links, etc -->
-    <footer id="about">
-      <p style="text-align:right;">
-        @ryanmcney | Sr. Product Manager
-      </p>
-    </footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-right">
+          <footer id="about">
+            <p>@ryanmcney | Sr. Product Manager</p>
+          </footer>
+        </div>
+      </div>
+    </div>
 
 <!-- Bootstrap Bundle with Popper -->
 
